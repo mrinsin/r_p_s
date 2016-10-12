@@ -1,0 +1,73 @@
+<html>
+  <head>
+
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <title>Let's Play A Game..</title>
+
+    <link rel="stylesheet" href="rps.css" type="text/css" />
+
+    <script type="text/javascript" src="rps.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+  </head>
+  <body id="body">
+    <div class="container">
+
+      <div class="row">
+        <h1>Rock, Paper, Scissors</h1>
+      </div>
+
+      <div class="row">
+        <h4>The name of the game is Rock, Paper, Scissors. You will be playing against ME, the machine. Type your choice into the textbox below (and thanks to my genius creator**, I will have no idea what you typed in). When you click <em>Play</em> both my guess, and yours, will be dislpayed on the screen. This game can be played over and over again as many times as you desire. Enjoy!</h4>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <input type="text" placeholder="Rock/Paper/Scissors" id="userChoice" />
+        </div>
+
+        <div class="col-md-4">
+          <input type="button" value="Play" id="playButton" />
+        </div>
+
+        <div class="col-md-4">
+          <h2>I'm thinking...</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <p id="playerResults">You played :   ||  The machine played : </p>
+      </div>
+
+      <div class="row">
+        <p id="winner">Player/Machine wins!</p>
+      </div>
+
+      <div class="row">
+        <p>
+        </p>
+      </div>
+
+      <div class="row">
+        <p>
+          <footer>Thanks for playing! Enjoy this temporary victory, for I will take over your world some day. </footer>
+        </p>
+      </div>
+
+    </div>
+  </body>
+</html>
