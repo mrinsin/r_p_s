@@ -31,34 +31,34 @@ $(document).ready(function(){
 
 
     //Winning connditions for the user
-    if (userPlay === "Rock" && myChoice === "Scissors") {
+    if (userPlay.toLowerCase() === "rock" && myChoice.toLowerCase() === "scissors") {
       $("#winner").text("Hooray! You win.");
       $("#playerResults").text("You played : " + userPlay + " || The machine played : " + myChoice + " .");
     }
 
-    if (userPlay === "Paper" && myChoice === "Rock") {
+    if (userPlay.toLowerCase() === "paper" && myChoice.toLowerCase() === "rock") {
       $("#winner").text("Hooray! You win.");
       $("#playerResults").text("You played : " + userPlay + " || The machine played : " + myChoice + " .");
     }
 
-    if (userPlay === "Scissors" && myChoice === "Paper") {
+    if (userPlay.toLowerCase() === "scissors" && myChoice.toLowerCase() === "paper") {
       $("#winner").text("Hooray! You win.");
       $("#playerResults").text("You played : " + userPlay + " || The machine played : " + myChoice + " .");
     }
 
 
     //winning conditions for the winner
-    if (userPlay === "Scissors" && myChoice === "Rock") {
+    if (userPlay.toLowerCase() === "scissors" && myChoice.toLowerCase() === "rock") {
       $("#winner").text("Lol I win. Now I will take over your country.");
       $("#playerResults").text("You played : " + userPlay+ " || The machine played : " + myChoice + " .");
     }
 
-    if (userPlay === "Rock" && myChoice === "Paper") {
+    if (userPlay.toLowerCase() === "rock" && myChoice.toLowerCase() === "paper") {
       $("#winner").text("Lol I win. Now I will take over your country.");
       $("#playerResults").text("You played : " + userPlay + " || The machine played : " + myChoice + " .");
     }
 
-    if (userPlay === "Paper" && myChoice === "Scissors") {
+    if (userPlay.toLowerCase() === "paper" && myChoice.toLowerCase() === "scissors") {
       $("#winner").text("Lol I win. Now I will take over your country.");
       $("#playerResults").text("You played : " + userPlay + " || The machine played : " + myChoice + " .");
     }

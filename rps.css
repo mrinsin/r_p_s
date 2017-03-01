@@ -2,8 +2,13 @@
   text-align: center;
 }
 
+body {
+  background-image: url("bg.png") !important;
+
+}
+
 .container {
-  background-image: url("bg.png");
+    background-image: url("bg.png") !important;
 }
 
 h1,h2, h4 {
