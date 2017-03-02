@@ -1,6 +1,9 @@
 //The variable that stores the computers choice to be played
 var myChoice;
 
+//The variable to store the user's choice
+var userPlay = "";
+
 //load the page when the document is ready
 $(document).ready(function(){
 
@@ -8,13 +11,10 @@ $(document).ready(function(){
   console.log("The game starts");
 
   //when the user clicks the play button, the following happens.
-  $("#playButton").on("click", function(){
+  $("#rock").on("click", function(){
 
-    var userPlay = $("#userChoice").val();
-    console.log(userPlay + " is the user's pick.\n");
-
-    //lets the console user know the play button has been clicked.
-    console.log("The play button has been clicked");
+    console.log(" roock is the user's pick.\n");
+    userPlay = "Rock"
 
     //lets the machine pick a choice to play
     machineChoice();
@@ -31,41 +31,18 @@ $(document).ready(function(){
 
 
     //Winning connditions for the user
-    if (userPlay.toLowerCase() === "rock" && myChoice.toLowerCase() === "scissors") {
-      $("#winner").text("Hooray! You win.");
-      $("#playerResults").text("You played : " + userPlay + " || The machine played : " + myChoice + " .");
-    }
-
-    if (userPlay.toLowerCase() === "paper" && myChoice.toLowerCase() === "rock") {
-      $("#winner").text("Hooray! You win.");
-      $("#playerResults").text("You played : " + userPlay + " || The machine played : " + myChoice + " .");
-    }
-
-    if (userPlay.toLowerCase() === "scissors" && myChoice.toLowerCase() === "paper") {
+    if (myChoice === "Scissors") {
       $("#winner").text("Hooray! You win.");
       $("#playerResults").text("You played : " + userPlay + " || The machine played : " + myChoice + " .");
     }
 
 
     //winning conditions for the winner
-    if (userPlay.toLowerCase() === "scissors" && myChoice.toLowerCase() === "rock") {
-      $("#winner").text("Lol I win. Now I will take over your country.");
-      $("#playerResults").text("You played : " + userPlay+ " || The machine played : " + myChoice + " .");
-    }
-
-    if (userPlay.toLowerCase() === "rock" && myChoice.toLowerCase() === "paper") {
+    if (myChoice === "Paper") {
       $("#winner").text("Lol I win. Now I will take over your country.");
       $("#playerResults").text("You played : " + userPlay + " || The machine played : " + myChoice + " .");
     }
 
-    if (userPlay.toLowerCase() === "paper" && myChoice.toLowerCase() === "scissors") {
-      $("#winner").text("Lol I win. Now I will take over your country.");
-      $("#playerResults").text("You played : " + userPlay + " || The machine played : " + myChoice + " .");
-    }
-
-
-    //Clears the prvious choice out of the input text box
-    $("#userChoice").val("");
   });
 
 });

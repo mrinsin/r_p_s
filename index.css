@@ -4,5 +4,11 @@ body {
 
 img {
   max-height: 200px;
-  margin-top: 250px;
+  margin-top: 180px;
+}
+
+h1 {
+  font-size: 75px;
+  margin-top: 30px;
+  color: #848484;
 }
