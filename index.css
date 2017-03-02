@@ -1,7 +1,6 @@
 body {
   text-align: center;
   font-family: 'Delius', cursive;
-
 }
 
 img {
@@ -18,4 +17,13 @@ h1 {
 #result {
   margin-top: 180px;
   color: #738678;
+}
+
+#new_game {
+  margin-top: 65px;
+}
+
+#playAgain {
+  font-size: 60px;
+  margin-left: -13px;
 }

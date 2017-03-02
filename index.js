@@ -56,7 +56,7 @@ function letsPLay() {
       }
 
       myChoice = " ";
-      $("#newGame").append('<input type="button" class="btn btn-info" id="playAgain" value="Play Again" />')
+      $("#new_game").append('<h1><a href="index.html" id="playAgain">Play again</a></h1>')
 
     });
 
@@ -99,7 +99,7 @@ function letsPLay() {
       }
 
       myChoice = " ";
-      $("#newGame").append('<button class="btn btn-info" id="playAgain" value="Play Again"></button>')
+      $("#new_game").append('<h1><a href="index.html" id="playAgain">Play again</a></h1>')
 
     });
 
@@ -142,7 +142,7 @@ function letsPLay() {
       }
 
       myChoice = " ";
-      $("#newGame").append('<button class="btn btn-info" id="playAgain" value="Play Again"></button>')
+      $("#new_game").append('<h1><a href="index.html" id="playAgain">Play again</a></h1>')
     });
 }
 
