@@ -1,18 +1,21 @@
 body {
   text-align: center;
+  font-family: 'Delius', cursive;
+
 }
 
 img {
-  max-height: 200px;
+  max-height: 175px;
   margin-top: 180px;
 }
 
 h1 {
-  font-size: 75px;
+  font-size: 70px;
   margin-top: 30px;
   color: #848484;
 }
 
 #result {
   margin-top: 180px;
+  color: #738678;
 }

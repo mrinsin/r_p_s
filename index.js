@@ -49,13 +49,14 @@ function letsPLay() {
 
       //winning conditions for the winner
       if (myChoice === "Paper") {
-        $("#center").replaceWith('<h1 id="result">HAHAHAHHA I win!</h1>');
+        $("#center").replaceWith('<h1 id="result">HAHAHA I win!</h1>');
         console.log("Yesssss I win");
         $("#left").replaceWith('<img src="rock.jpeg" />');
         $("#right").replaceWith('<img src="paper.jpeg" />');
       }
 
       myChoice = " ";
+      $("#newGame").append('<input type="button" class="btn btn-info" id="playAgain" value="Play Again" />')
 
     });
 
@@ -91,13 +92,14 @@ function letsPLay() {
 
       //winning conditions for the winner
       if (myChoice === "Scissors") {
-        $("#center").replaceWith('<h1 id="result">HAHAHAHHA I win!</h1>');
+        $("#center").replaceWith('<h1 id="result">HAHAHA I win!</h1>');
         console.log("Yesssss I win");
         $("#left").replaceWith('<img src="paper.jpeg" />');
         $("#right").replaceWith('<img src="scissors.png" />');
       }
 
       myChoice = " ";
+      $("#newGame").append('<button class="btn btn-info" id="playAgain" value="Play Again"></button>')
 
     });
 
@@ -133,14 +135,14 @@ function letsPLay() {
 
       //winning conditions for the winner
       if (myChoice === "Rock") {
-        $("#center").replaceWith('<h1 id="result">HAHAHAHHA I win!</h1>');
+        $("#center").replaceWith('<h1 id="result">HAHAHA I win!</h1>');
         console.log("Yesssss I win");
         $("#left").replaceWith('<img src="scissors.png" />');
         $("#right").replaceWith('<img src="rock.jpeg" />');
       }
 
       myChoice = " ";
-
+      $("#newGame").append('<button class="btn btn-info" id="playAgain" value="Play Again"></button>')
     });
 }
 
